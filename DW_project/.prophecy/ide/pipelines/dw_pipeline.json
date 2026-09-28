@@ -1,0 +1,52 @@
+{
+  "id" : "dw_pipeline",
+  "metainfo" : {
+    "label" : "dw_pipeline",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "single_value_query_JGOAW-GntHg4YGU28ZuN7$$XTcADH5vMtmWtqN6hQWPR" : "models/dw_pipeline/dw_pipeline__single_value_query.sql",
+      "SSQhb_jDhA-OmXF2wq5NT$$FRwgEQd0o4NWt5t6jPMiW" : "models/dw_pipeline/dw_pipeline__single_value_query.sql"
+    }
+  },
+  "processes" : {
+    "SSQhb_jDhA-OmXF2wq5NT$$FRwgEQd0o4NWt5t6jPMiW" : {
+      "id" : "SSQhb_jDhA-OmXF2wq5NT$$FRwgEQd0o4NWt5t6jPMiW",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "single_value_query",
+        "x" : -140,
+        "y" : -140,
+        "phase" : 0,
+        "comment" : "Returns a fixed value for use in simple checks or testing.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : "select 1 as a"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "JGOAW-GntHg4YGU28ZuN7$$XTcADH5vMtmWtqN6hQWPR",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

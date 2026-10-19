@@ -1,0 +1,6 @@
+---
+version: 2
+models:
+- name: "dataworks_pipeline__single_value_query"
+  tags:
+  - "prophecy_temp"

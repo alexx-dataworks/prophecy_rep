@@ -1,0 +1,50 @@
+{
+  "id" : "dataworks_pipeline",
+  "metainfo" : {
+    "label" : "dataworks_pipeline",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "single_value_query_sYkEPyLwz1ZzUnSC5Y6O-$$TurSYUdzHZE_k7eUltG2o" : "models/dataworks_pipeline/dataworks_pipeline__single_value_query.sql",
+      "tvqMIeyHtdx2zdOAXMo3_$$589klwNp-OZmUYZPBzh6s" : "models/dataworks_pipeline/dataworks_pipeline__single_value_query.sql"
+    }
+  },
+  "processes" : {
+    "tvqMIeyHtdx2zdOAXMo3_$$589klwNp-OZmUYZPBzh6s" : {
+      "id" : "tvqMIeyHtdx2zdOAXMo3_$$589klwNp-OZmUYZPBzh6s",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "dataworks_pipeline__single_value_query",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "dataworks_pipeline__single_value_query"
+      },
+      "visualMetaInfo" : {
+        "lastNodeProcessIds" : [ "single_value_query_sYkEPyLwz1ZzUnSC5Y6O-$$TurSYUdzHZE_k7eUltG2o" ],
+        "skipIfZeroRows" : false,
+        "visualProcessIds" : [ "single_value_query_sYkEPyLwz1ZzUnSC5Y6O-$$TurSYUdzHZE_k7eUltG2o", "tvqMIeyHtdx2zdOAXMo3_$$589klwNp-OZmUYZPBzh6s" ],
+        "type" : "ephemeral",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "sYkEPyLwz1ZzUnSC5Y6O-$$TurSYUdzHZE_k7eUltG2o",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

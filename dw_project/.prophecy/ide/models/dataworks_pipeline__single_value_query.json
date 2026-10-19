@@ -1,0 +1,90 @@
+{
+  "id" : "dataworks_pipeline__single_value_query",
+  "metainfo" : {
+    "label" : "dataworks_pipeline__single_value_query",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "materialized" : "ephemeral",
+        "database" : "\"workspace\"",
+        "schema" : "\"default\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "single_value_query_sYkEPyLwz1ZzUnSC5Y6O-$$TurSYUdzHZE_k7eUltG2o" : {
+      "id" : "single_value_query_sYkEPyLwz1ZzUnSC5Y6O-$$TurSYUdzHZE_k7eUltG2o",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "single_value_query"
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM single_value_query\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "input_port_0",
+          "slug" : "input_port_0"
+        } ],
+        "outputs" : [ {
+          "id" : "output_port_0",
+          "slug" : "output_port_0"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "tvqMIeyHtdx2zdOAXMo3_$$589klwNp-OZmUYZPBzh6s" : {
+      "id" : "tvqMIeyHtdx2zdOAXMo3_$$589klwNp-OZmUYZPBzh6s",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "single_value_query",
+        "x" : -140,
+        "y" : -140,
+        "phase" : 0,
+        "comment" : "Returns a fixed value for testing or validation purposes.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : "select 1 as a"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "sYkEPyLwz1ZzUnSC5Y6O-$$TurSYUdzHZE_k7eUltG2o",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "conn_tvqMIeyHtdx2zdOAXMo3_$$589klwNp-OZmUYZPBzh6s_sYkEPyLwz1ZzUnSC5Y6O-$$TurSYUdzHZE_k7eUltG2o_single_value_query_sYkEPyLwz1ZzUnSC5Y6O-$$TurSYUdzHZE_k7eUltG2o",
+    "source" : "tvqMIeyHtdx2zdOAXMo3_$$589klwNp-OZmUYZPBzh6s",
+    "sourcePort" : "sYkEPyLwz1ZzUnSC5Y6O-$$TurSYUdzHZE_k7eUltG2o",
+    "target" : "single_value_query_sYkEPyLwz1ZzUnSC5Y6O-$$TurSYUdzHZE_k7eUltG2o",
+    "targetPort" : "input_port_0",
+    "isWireless" : false
+  } ],
+  "component" : "Model"
+}
